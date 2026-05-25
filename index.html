@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha História — Lupz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particle canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="glitch" data-text="LUPZ">LUPZ</span>
+    </div>
+    <div class="nav-chapters">
+      <a href="#ch1" class="nav-link">01</a>
+      <a href="#ch2" class="nav-link">02</a>
+      <a href="#ch3" class="nav-link">03</a>
+      <a href="#ch4" class="nav-link">04</a>
+      <a href="#ch5" class="nav-link">05</a>
+      <a href="#ch6" class="nav-link">06</a>
+      <a href="#ch7" class="nav-link">07</a>
+    </div>
+    <div class="nav-progress-bar"><div class="nav-fill" id="navFill"></div></div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <p class="hero-tag">// arquivo pessoal</p>
+      <h1 class="hero-title">
+        <span class="hero-title-line reveal-line">Minha</span>
+        <span class="hero-title-line reveal-line delay-1">História</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">
+        De <em>Teste Projéteis</em> a <strong>Lupz</strong> — uma jornada pela internet,
+        entre animações, hacks, amizades e identidade.
+      </p>
+      <div class="hero-meta reveal-up delay-3">
+        <span class="meta-item"><span class="mono">2017</span> → <span class="mono">hoje</span></span>
+        <span class="meta-divider">|</span>
+        <span class="meta-item">7 capítulos</span>
+      </div>
+      <a href="#ch1" class="scroll-cta reveal-up delay-4">
+        <span>Começar</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 2v12M2 10l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </div>
+    <div class="hero-id-card reveal-up delay-3">
+      <div class="id-card">
+        <div class="id-header">
+          <span class="id-label">ID_REGISTRO</span>
+          <span class="id-num">#0001</span>
+        </div>
+        <div class="id-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-inner avatar-photo">
+            <img src="avatar.png" alt="Lupz Protogen" />
+          </div>
+        </div>
+        <div class="id-info">
+          <div class="id-row"><span class="id-key">NOME</span><span class="id-val hl">Lupz</span></div>
+          <div class="id-row"><span class="id-key">ESPÉCIE</span><span class="id-val">Protogen</span></div>
+          <div class="id-row"><span class="id-key">INÍCIO</span><span class="id-val">2017</span></div>
+          <div class="id-row"><span class="id-key">STATUS</span><span class="id-val online">● ONLINE</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CHAPTERS -->
+  <main class="chapters">
+
+    <!-- CHAPTER 1 -->
+    <section class="chapter" id="ch1" data-ch="01">
+      <div class="ch-marker">
+        <span class="ch-num">01</span>
+        <span class="ch-line"></span>
+      </div>
+      <div class="ch-body">
+        <h2 class="ch-title reveal-up">Os Primórdios</h2>
+        <p class="ch-date reveal-up delay-1">2017</p>
+        <div class="ch-text">
+          <p class="reveal-up delay-1">
+            Tudo começou em <mark>2017</mark>, quando finalmente tive minha própria conta no YouTube.
+            Antes disso eu dividia uma conta com meus irmãos — e como eu era o <mark>caçula</mark>,
+            eles viviam me zoando por qualquer coisa. Eu tinha uns <mark>11 anos</mark>, enquanto eles
+            tinham entre 13 e 15. No fim ainda éramos só um bando de crianças brigando por espaço na internet.
+          </p>
+          <p class="reveal-up delay-2">
+            Quando ganhei minha própria conta senti uma <mark>liberdade enorme</mark>. Pela primeira vez
+            eu podia assistir o que eu quisesse sem alguém aparecendo do nada pra rir da minha cara.
+            E foi aí que comecei a entrar no mundo das <mark>animações de stickman</mark>.
+          </p>
+          <p class="reveal-up delay-2">
+            Eu assistia tantos vídeos desse tipo que decidi criar meu próprio canal. O problema era
+            escolher um nome. Não fazia ideia do que colocar, então a primeira coisa que veio na cabeça
+            foi "Teste". Achei simples demais. Aí olhei pras sugestões do teclado do celular e apareceu
+            a palavra <mark>Projéteis</mark>. Eu nem sabia o que significava, mas achei o nome muito irado,
+            principalmente por causa do acento.
+          </p>
+        </div>
+
+        <div class="name-badge reveal-up delay-3">
+          <span class="badge-label">PRIMEIRO NOME</span>
+          <span class="badge-name">Teste Projéteis</span>
+        </div>
+
+        <div class="ch-text">
+          <p class="reveal-up delay-3">
+            Comecei a animar sem entender absolutamente nada. Quando terminei minha primeira animação
+            apareceu outro problema: eu nem sabia exportar vídeo. Então <mark>gravei a tela do celular</mark>
+            e postei daquele jeito mesmo.
+          </p>
+          <blockquote class="ch-quote reveal-up delay-4">
+            "No dia seguinte acordei e vi que tinha ganhado <mark>2 inscritos</mark> e <mark>1 comentário</mark>.
+            O comentário era literalmente alguém divulgando o próprio canal — mas mesmo assim fiquei feliz
+            pra caralho. Parecia que uma porta tinha se aberto pra mim."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2 -->
+    <section class="chapter alt" id="ch2" data-ch="02">
+      <div class="ch-marker">
+        <span class="ch-num">02</span>
+        <span class="ch-line"></span>
+      </div>
+      <div class="ch-body">
+        <h2 class="ch-title reveal-up">A Comunidade de Animação</h2>
+        <p class="ch-date reveal-up delay-1">2017 — 2018</p>
+        <div class="ch-text">
+          <p class="reveal-up delay-1">
+            A partir daí comecei a levar aquilo mais a sério. Via tutoriais, treinava animação e postava
+            vídeos cada vez melhores. Meu canal crescia <mark>bem devagarzinho</mark> — às vezes ganhava
+            3 inscritos, às vezes 5, às vezes nenhum. Mas eu continuava.
+          </p>
+          <p class="reveal-up delay-2">
+            Foi nessa época que conheci minha primeira <mark>comunidade online de verdade</mark>: a comunidade
+            de animação do Stickman Fighters. Antigamente o YouTube tinha chats e grupos, então parecia quase
+            um <mark>Discord embutido</mark>. E pra mim aquilo era gigantesco.
+          </p>
+          <p class="reveal-up delay-2">
+            Eu era muito tímido vendo aqueles canais com 200 ou 400 inscritos, porque na minha cabeça eles
+            eram <mark>famosos</mark>. Hoje parece engraçado, mas naquela época aquilo era outro universo.
+          </p>
+          <p class="reveal-up delay-3">
+            Mesmo assim criei coragem pra conversar com o pessoal. Fiz amizades, participei de
+            <mark>collabs</mark> e até entrei em roleplays completamente caóticos. Tinha RP onde o cara
+            simplesmente olhava pra você e dizia que você morreu — e se recusasse morrer ele ficava bravo e quitava.
+            <em>Coisa de criança mesmo.</em>
+          </p>
+          <p class="reveal-up delay-4">
+            Mas como toda fase da internet, aquilo começou a morrer. Fui enjoando de fazer animação, e pra
+            completar, o <mark>YouTube removeu os chats e grupos</mark> da plataforma. A maioria das pessoas
+            migrou pro Discord, mas eu já tava perdendo o interesse. Então parei de postar no canal de animação.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section class="chapter" id="ch3" data-ch="03">
+      <div class="ch-marker">
+        <span class="ch-num">03</span>
+        <span class="ch-line"></span>
+      </div>
+      <div class="ch-body">
+        <h2 class="ch-title reveal-up">A Era Mortix</h2>
+        <p class="ch-date reveal-up delay-1">2018 — 2019</p>
+        <div class="ch-text">
+          <p class="reveal-up delay-1">
+            E foi aí que começou outra fase da minha vida online: <mark>Geometry Dash</mark>. No começo
+            eu jogava uma versão modificada cheia de hack. Tinha NoClip, Coins infinitas, demon hack e
+            tudo que dava pra imaginar. Eu me sentia o <mark>hacker mais perigoso do planeta</mark>.
+          </p>
+          <p class="reveal-up delay-2">
+            Nessa época conheci o <mark>Anaban</mark>, um hacker famoso do GD que tinha invadido a aba de
+            recent levels e causado um caos na comunidade. Eu virei fã dele na hora. Na minha cabeça eu
+            seria o <mark>sucessor</mark> daquele cara.
+          </p>
+        </div>
+
+        <div class="name-badge reveal-up delay-2 alt">
+          <span class="badge-label">NOVO NOME</span>
+          <span class="badge-name">Mortix</span>
+        </div>
+
+        <div class="ch-text">
+          <p class="reveal-up delay-3">
+            Comecei a agir como se fosse um vilão de <mark>creepypasta barata</mark>. Passava Extreme Demons
+            atravessando tudo no hack, criava levels impossíveis, spamava DM dos outros jogadores e instalava
+            um monte de <mark>APK suspeito do Aptoide</mark> tentando achar hacks mais absurdos ainda.
+            Meu celular provavelmente pegou <em>47 doenças digitais</em> diferentes nessa época.
+          </p>
+          <blockquote class="ch-quote reveal-up delay-3">
+            "Só que depois de um tempo percebi uma coisa meio deprimente: <mark>ninguém ligava</mark>.
+            Não tinha vídeo sobre mim, ninguém tinha medo, ninguém me achava lendário. Eu era só mais
+            um moleque enchendo o saco no Geometry Dash."
+          </blockquote>
+          <p class="reveal-up delay-4">
+            Então aos poucos fui parando com aquilo e comecei a jogar normalmente. E foi aí que descobri
+            outro problema: <mark>eu era horrível no jogo</mark>.
+          </p>
+          <p class="reveal-up delay-4">
+            Um dia apareceu um cara perguntando se eu queria fazer uma <mark>collab</mark> com ele. Eu nem
+            sabia o que era collab, mas aceitei. A collab ficou horrível, sinceramente — mas depois de
+            terminar, o cara me agradeceu numa boa e foi embora. E aquilo mudou um pouco minha visão.
+            Pela primeira vez percebi que talvez fosse mais divertido <mark>fazer parte da comunidade</mark>
+            do que tentar parecer um hacker assustador.
+          </p>
+          <p class="reveal-up delay-4">
+            Passei a criar levels seriamente, estudar decoração e melhorar gameplay. Conheci um
+            <mark>brasileiro no GD</mark> através de um vídeo do Dorami — coisa rara na época, porque
+            quase não existia BR na comunidade. A maioria era gringo ou espanhol. Então encontrar um BR ali
+            parecia descobrir alguém da mesma vila perdida no meio do espaço. Mandei pedido de amizade com
+            uma mensagem em português. Ele aceitou. Fizemos várias collabs juntos e fui conhecendo os
+            amigos dele também.
+          </p>
+          <p class="reveal-up delay-4">
+            Foi então que decidimos fazer uma <mark>megacollab</mark> tentando pegar Epic Rate — praticamente
+            o auge dos levels na época. Todo mundo terminou suas partes. Eu terminei a minha também.
+            Não tava perfeita, mas eu tinha me esforçado muito nela.
+          </p>
+          <blockquote class="ch-quote reveal-up delay-5">
+            "Só que quando o level foi lançado… <mark>minha parte não estava lá</mark>. Meu amigo tinha
+            removido ela sem me avisar e colocado outra no lugar, feita por um cara furry. A parte dele
+            realmente era melhor que a minha, mas aquilo me deixou muito puto. Eu senti como se tivesse
+            sido <mark>descartado</mark>."
+          </blockquote>
+          <p class="reveal-up delay-5">
+            Até então eu não ligava pra furry. Mas aquele foi o primeiro que eu conheci mais diretamente,
+            e minha experiência acabou sendo negativa. Mesmo assim deixei quieto e segui em frente.
+          </p>
+          <p class="reveal-up delay-5">
+            Só que depois aconteceu outra coisa. Teve um <mark>campeonato de criação de levels</mark> na
+            comunidade brasileira de GD. Eu participei e fiz um level que até hoje considero um dos melhores
+            que já criei.
+          </p>
+          <blockquote class="ch-quote reveal-up delay-5">
+            "Mas adivinha quem ficou em <mark>primeiro lugar</mark>? O mesmo furry da collab antiga.
+            Eu fiquei em <mark>segundo</mark>."
+          </blockquote>
+          <p class="reveal-up delay-5">
+            Na minha cabeça adolescente aquilo virou praticamente uma "prova" de que eu tinha motivo pra não
+            gostar de furry. Comecei a andar com pessoas que também odiavam, fazia piada, repetia argumentos
+            dos outros. Quando alguém perguntava por que eu odiava furry eu respondia aquelas coisas genéricas:
+            <em>"eles são estranhos", "fazem arte +18"</em>… mas sendo sincero? Grande parte do ódio vinha
+            mais da <mark>frustração</mark> e da influência das pessoas ao meu redor do que dos furries em si.
+            Só que naquela época eu não percebia isso.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section class="chapter alt" id="ch4" data-ch="04">
+      <div class="ch-marker">
+        <span class="ch-num">04</span>
+        <span class="ch-line"></span>
+      </div>
+      <div class="ch-body">
+        <h2 class="ch-title reveal-up">Roblox e a Tóxica Arte do PvP</h2>
+        <p class="ch-date reveal-up delay-1">2019 — 2020</p>
+        <div class="ch-text">
+          <p class="reveal-up delay-1">
+            Fui saindo da comunidade de Geometry Dash e entrando no <mark>Roblox</mark>, principalmente
+            em jogos de PvP como <mark>Elemental Battlegrounds</mark>. Comecei a evoluir bastante no jogo,
+            farmar diamantes, subir de level e ficar cada vez mais forte. Naquela época pegar
+            <mark>level 200</mark> era praticamente o nível máximo, porque demorava meses pra upar.
+          </p>
+          <p class="reveal-up delay-2">
+            Foi aí que aconteceu outro evento importante: meus primeiros <mark>Robux</mark>. Comprei minha
+            primeira skin no Roblox e finalmente abandonei as skins grátis. Só que ao invés de fazer um
+            avatar edgy ou assustador… eu escolhi <mark>ser uma mulher</mark>.
+          </p>
+          <blockquote class="ch-quote reveal-up delay-3">
+            "Na minha cabeça genial de adolescente, se eu fosse mulher no jogo o pessoal pegaria leve comigo
+            no PvP. Só que aconteceu exatamente o contrário. Os caras ficavam ainda mais tóxicos quando
+            perdiam — mas eu derrotava eles mesmo assim. <mark>E eu ria muito disso.</mark>"
+          </blockquote>
+          <p class="reveal-up delay-4">
+            Mas chegou uma hora em que eu tive que aceitar: o jogo tava acabando. E sinceramente? Ver o
+            primeiro jogo onde fiz amizades morrer daquele jeito foi <mark>triste pra caralho</mark>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section class="chapter" id="ch5" data-ch="05">
+      <div class="ch-marker">
+        <span class="ch-num">05</span>
+        <span class="ch-line"></span>
+      </div>
+      <div class="ch-body">
+        <h2 class="ch-title reveal-up">SoulShatters e a Confusão</h2>
+        <p class="ch-date reveal-up delay-1">2020</p>
+        <div class="ch-text">
+          <p class="reveal-up delay-1">
+            Em 2020 conheci outro jogo através de um vídeo do youtuber Godenot: <mark>SoulShatters</mark>.
+            Naquela época os efeitos do jogo pareciam absurdos. Comparado ao Elemental Battlegrounds,
+            que era basicamente esfera colorida voando pra todo lado, SoulShatters parecia
+            <mark>coisa de outro planeta</mark>.
+          </p>
+          <p class="reveal-up delay-2">
+            Entrei no jogo pela primeira vez e fui <mark>completamente massacrado</mark>. Mesmo assim
+            continuei jogando e comecei a gostar cada vez mais dele.
+          </p>
+          <p class="reveal-up delay-2">
+            Só que aí descobri uma coisa que me deixou em choque: o dono do jogo era <mark>furry</mark>.
+            <em>Bunny_Dreemurr.</em> E aquilo gerou uma sensação muito estranha na minha cabeça. Porque eu
+            tava adorando um jogo criado justamente por algo que eu dizia odiar.
+          </p>
+        </div>
+
+        <div class="ch-text">
+          <p class="reveal-up delay-4">
+            Só que diferente das outras vezes, eu não fiquei bravo. <mark>Só confuso.</mark> E como o dono
+            era furry, o jogo também tinha muitos furries. Muito mais que no Elemental. Então aos poucos
+            comecei a olhar eles de uma forma diferente.
+          </p>
+          <p class="reveal-up delay-4">
+            Até que aconteceu um pequeno desastre. O primeiro furry que chamei pra um
+            <mark>PvP honesto</mark> no SoulShatters foi extremamente tóxico comigo.
+          </p>
+          <blockquote class="ch-quote reveal-up delay-5">
+            "E imagina a situação: eu tentando <mark>deixar de odiar furry</mark>… e o PRIMEIRO furry
+            que encontro age igual um babaca."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 6 -->
+    <section class="chapter alt" id="ch6" data-ch="06">
+      <div class="ch-marker">
+        <span class="ch-num">06</span>
+        <span class="ch-line"></span>
+      </div>
+      <div class="ch-body">
+        <h2 class="ch-title reveal-up">A Transformação</h2>
+        <p class="ch-date reveal-up delay-1">2020 — 2021</p>
+        <div class="ch-text">
+          <p class="reveal-up delay-1">
+            No final de 2020 conheci um canal pequeno no YouTube que fazia live de Geometry Dash. Decidi
+            entrar no Discord dele pra apoiar. Ele tinha <mark>12 anos</mark> na época, eu tinha uns 14,
+            e praticamente todo mundo da comunidade era pré-adolescente. Parecia voltar pros meus tempos
+            antigos de canal pequeno.
+          </p>
+          <p class="reveal-up delay-2">
+            Foi nessa época que entrei em <mark>call pela primeira vez na vida</mark>. E sinceramente?
+            Minha voz era tão grave que parecia que eu tinha engolido um <em>subwoofer</em>.
+          </p>
+          <p class="reveal-up delay-2">
+            Mas tirando isso, comecei a mostrar pra eles o mundo de <mark>Undertale</mark>, AU's e fangames,
+            já que eu ainda jogava SoulShatters naquela época. Também apresentei <mark>roleplay</mark> pra eles.
+            E eles amaram. Nós três passávamos horas criando histórias juntos — às vezes começávamos às
+            <mark>8 da manhã</mark> e íamos até meia-noite só improvisando universo, luta, personagem e lore.
+            A maioria das histórias era baseada em Undertale, mas misturávamos qualquer universo que achássemos legal.
+          </p>
+          <p class="reveal-up delay-2">
+            E claro: era <mark>impossível matar o Sans</mark> nesses roleplay. O cara desviava até da destruição do universo.
+          </p>
+          <p class="reveal-up delay-3">
+            Em um desses roleplays meus amigos quiseram colocar o <mark>Asriel</mark> na história.
+            E adivinha quem foi escolhido pra interpretar ele? Eu. No começo recusei, porque na minha
+            cabeça o personagem era "furry demais". Mas eles insistiram tanto que aceitei.
+          </p>
+          <blockquote class="ch-quote reveal-up delay-4">
+            "Aos poucos comecei a me acostumar com aquilo. Depois comecei a gostar.
+            E sem perceber… eu tinha <mark>virado furry</mark>."
+          </blockquote>
+          <p class="reveal-up delay-4">
+            Meu primeiro fursona era um coelho que fazia cosplay de Asriel. Na época escolhi coelho
+            justamente por lembrar muito ele. Também abandonei o nome Mortix.
+          </p>
+        </div>
+
+        <div class="name-badge reveal-up delay-5 final">
+          <span class="badge-label">RENASCIMENTO</span>
+          <span class="badge-name">Bunny</span>
+        </div>
+
+        <div class="ch-text">
+          <p class="reveal-up delay-5">
+            Enquanto isso no SoulShatters eu já usava o nome Bunny e tinha feito uma skin praticamente
+            inspirada no próprio <mark>Bunny_Dreemurr</mark>. Comecei a fazer novas amizades dentro do jogo.
+            Mas mesmo sendo furry, eu ainda evitava outros furries. Na minha cabeça muitos deles continuavam
+            sendo tóxicos, e eu era tipo <em>"o furry diferente"</em>.
+          </p>
+          <p class="reveal-up delay-5">
+            Até que um dia encontrei um <mark>Protogen</mark>. No começo tentei ignorar ele completamente,
+            mas o cara era insistente e começou a puxar assunto comigo mesmo assim. Ele era gringo, então
+            conversávamos em inglês. Acabei adicionando ele e, pela primeira vez, comecei a criar uma
+            <mark>imagem positiva dos Protogens</mark>.
+          </p>
+          <p class="reveal-up delay-5">
+            Foi nessa época também que conheci o canal do <mark>Protogen_BR</mark>. E apesar dele ser
+            brasileiro — coisa rara na época — ele parecia viver em guerra contra os próprios inscritos.
+            Na minha cabeça ele fazia parte da "comunidade caótica". Mesmo assim continuei acompanhando ele.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 7 -->
+    <section class="chapter" id="ch7" data-ch="07">
+      <div class="ch-marker">
+        <span class="ch-num">07</span>
+        <span class="ch-line end"></span>
+      </div>
+      <div class="ch-body">
+        <h2 class="ch-title reveal-up">Lupz</h2>
+        <p class="ch-date reveal-up delay-1">2022 — hoje</p>
+        <div class="ch-text">
+          <p class="reveal-up delay-1">
+            Antes de 2022 eu tinha abandonado o visual de coelho depois de assistir <mark>Beastars</mark>.
+            Na minha cabeça os coelhos eram frágeis demais, e eu não queria parecer fraco. Então virei
+            um <mark>lobo preto</mark> — mas aí surgiu outro problema: não queria continuar me chamando de Bunny.
+          </p>
+          <p class="reveal-up delay-2">
+            Fui perguntar ideia de nome pra um amigo que fazia parte da comunidade do
+            <mark>Elemental Battlegrounds</mark>. Ele não tinha muita criatividade, então em vez de sugerir
+            algo, soltou uma frase do nada:
+          </p>
+          <blockquote class="ch-quote reveal-up delay-2">
+            "Você já teve outros nomes, vai ficar nesse <mark>loop</mark> de nomes."
+          </blockquote>
+          <p class="reveal-up delay-3">
+            Eu olhei pra palavra <mark>loop</mark> e tive a ideia na hora. Queria usar ela como nome,
+            mas não queria me chamar literalmente de Loop. Então fui moldando a palavra até chegar em
+            algo que soasse mais interessante: <mark>Lupus</mark>.
+          </p>
+        </div>
+
+        <div class="name-badge reveal-up delay-3 alt">
+          <span class="badge-label">LOOP → LUPUS → EVOLUÇÃO</span>
+          <span class="badge-name">Lupus → Lupz</span>
+        </div>
+
+        <div class="ch-text">
+          <p class="reveal-up delay-4">
+            Mais tarde as pessoas começaram a me chamar de <mark>"Lapis"</mark> sem parar, então criei
+            um apelido menor. E esse nome continua comigo até hoje.
+          </p>
+          <p class="reveal-up delay-4">
+            Meu nome original ainda continua sendo <mark>Lupus</mark> — mas vocês podem me chamar de <mark>Lupz</mark>.
+          </p>
+          <p class="reveal-up delay-3">
+            Depois disso comecei a me aprofundar mais na comunidade dos <mark>Protogens</mark>.
+            Primeiro virei um Skull Dog. E então finalmente…
+          </p>
+        </div>
+
+        <div class="final-reveal reveal-up delay-4">
+          <div class="final-glow"></div>
+          <div class="final-content">
+            <p class="final-label">// identidade final</p>
+            <h3 class="final-name">
+              <span class="glitch" data-text="Lupz">Lupz</span>
+            </h3>
+            <p class="final-species">Protogen</p>
+            <div class="final-tags">
+              <span class="tag">YouTube</span>
+              <span class="tag">Geometry Dash</span>
+              <span class="tag">Roblox</span>
+              <span class="tag">Furry</span>
+              <span class="tag">Protogen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid"></div>
+    <div class="footer-content">
+      <p class="footer-sig">
+        <span class="glitch small" data-text="LUPZ">LUPZ</span>
+      </p>
+      <p class="footer-sub">De <em>Teste Projéteis</em> até aqui. Longa jornada.</p>
+      <p class="footer-mono">// fim do arquivo &nbsp;·&nbsp; 2017–∞</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
